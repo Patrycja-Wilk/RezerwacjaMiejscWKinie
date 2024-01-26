@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\300px-Mulan.jpg" />
+    <None Remove="Images\91QZvpx-4xL._AC_UF894,1000_QL80_.jpg" />
+    <None Remove="Images\HNWT6DgoBc14riaEeLCzGYopkqYBKxpGKqfNWfgr368M9WNvwCmz6pCNJBicw2DEv2YZDok3rZmom6Q9HZUAcqPCX2FEXqNsb85KMxpv67SxvvGS85BfSR6P2FP.gif" />
+    <None Remove="Images\inside-out.jpg" />
+    <None Remove="Images\Projekt bez nazwy.jpg" />
+    <None Remove="Images\s-l1200.jpg" />
+    <None Remove="Images\sala-kinowa-wnetrze-filmu-z-wkrotce-tekstem-na-bialym-ekranie-i-pustymi-czerwonymi-siedzeniami-kino-tlo-wektor-700-145378545.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kino">
+      <HintPath>..\Kino\Kino\bin\Debug\net6.0\Kino.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\300px-Mulan.jpg" />
+    <Resource Include="Images\91QZvpx-4xL._AC_UF894,1000_QL80_.jpg" />
+    <Resource Include="Images\HNWT6DgoBc14riaEeLCzGYopkqYBKxpGKqfNWfgr368M9WNvwCmz6pCNJBicw2DEv2YZDok3rZmom6Q9HZUAcqPCX2FEXqNsb85KMxpv67SxvvGS85BfSR6P2FP.gif" />
+    <Resource Include="Images\inside-out.jpg" />
+    <Resource Include="Images\Projekt bez nazwy.jpg" />
+    <Resource Include="Images\s-l1200.jpg" />
+    <Resource Include="Images\sala-kinowa-wnetrze-filmu-z-wkrotce-tekstem-na-bialym-ekranie-i-pustymi-czerwonymi-siedzeniami-kino-tlo-wektor-700-145378545.jpg" />
+  </ItemGroup>
+
+</Project>

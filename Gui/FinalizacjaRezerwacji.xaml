@@ -1,0 +1,52 @@
+﻿<Page x:Class="Gui.FinalizacjaRezerwacji"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FinalizacjaRezerwacji">
+
+    <Grid Background="#FFC4C4C4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="0,30,0,241" Grid.RowSpan="2">
+            <StackPanel Grid.Row="1" Margin="30,90,18,77" Orientation="Horizontal">
+                <StackPanel>
+                    <Label Content="Liczba biletów normalnych:" FontFamily="Constantia"/>
+                    <ComboBox x:Name="LiczbaBiletowNormalnychComboBox" SelectionChanged="LiczbaBiletowNormalnychComboBox_SelectionChanged" Width="40" HorizontalAlignment="Left" />
+                    <Label Content="Liczba biletów ulgowych:" FontFamily="Constantia"/>
+                    <ComboBox x:Name="LiczbaBiletowUlgowychComboBox" SelectionChanged="LiczbaBiletowUlgowychComboBox_SelectionChanged" Width="40" HorizontalAlignment="Left" />
+                    <Label Content="Cena:" FontFamily="Constantia"/>
+                    <TextBlock x:Name="CenaTextBlock" Width="100" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <StackPanel Margin="250,0,0,0" HorizontalAlignment="Right">
+                    <Label Content="Imię:" FontFamily="Constantia"/>
+                    <TextBox x:Name="ImieTextBox" TextWrapping="Wrap" Margin="0,0,0,10" Width="300"/>
+
+                    <Label Content="Nazwisko:" FontFamily="Constantia"/>
+                    <TextBox x:Name="NazwiskoTextBox" TextWrapping="Wrap" Margin="0,0,0,10" Width="300"/>
+
+                    <Label Content="Numer telefonu:" FontFamily="Constantia"/>
+                    <TextBox x:Name="TelefonTextBox" TextWrapping="Wrap" Margin="0,0,0,10" Width="300"/>
+
+                    <Label Content="E-mail:" FontFamily="Constantia"/>
+                    <TextBox x:Name="MailTextBox" TextWrapping="Wrap" Margin="0,0,0,10" Width="300"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Button Content="Finalizuj Rezerwacje" Click="FinalizujRezerwacje_Click" Height="32" Margin="288,327,0,159" HorizontalAlignment="Left" Width="228" FontFamily="Constantia" Background="Black" Foreground="White"/>
+        <Button Content="Powrot" VerticalAlignment="Top" Height="30" Margin="714,60,10,0" Click="Powrot_Click" Background="Black" Foreground="White" FontFamily="Constantia"/>
+        <Button Content="Zamknij" Click="Zamknij_Click" HorizontalAlignment="Left" Margin="713,10,0,0" VerticalAlignment="Top" Width="77" Height="30" Background="Red" Foreground="White" FontFamily="Constantia"/>
+
+        <Label Content="Dane kupującego" HorizontalAlignment="Left" Height="38" Margin="432,73,0,0" VerticalAlignment="Top" Width="168" FontSize="20" FontFamily="Constantia"/>
+        <Label Content="Rodzaj biletów" HorizontalAlignment="Left" Height="38" Margin="30,73,0,0" VerticalAlignment="Top" Width="168" FontSize="20" FontFamily="Constantia"/>
+        <Label Content="Wybrane miejsca:" HorizontalAlignment="Left" Height="33"  VerticalAlignment="Top" Width="124" FontSize="15" Margin="30,269,0,0" FontFamily="Constantia"/>
+        <TextBox x:Name="TxtBoxWybraneMiejsca" HorizontalAlignment="Left" Height="40" Margin="30,307,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
+    </Grid>
+
+</Page>
